@@ -8,7 +8,6 @@
 
 **Materia:** Comunicaciones de Datos  
 **Trabajo Práctico N°:** 1  
-**Título:** (colocar título del TP, ej: *Índice GINI con C, Python y Ensamblador*)  
 
 **Alumnos:** Mateo Bernardi - Santiago Madrid  
 **Año:** 2025  
