@@ -18,13 +18,32 @@
 
 ## Actividad 1
 
+
+
 ---
 ## Actividad 2
+
+
 
 ---
 ## Actividad 3
 
+![alt text](image.png)
+
+1) La imagen muestra una modulacion PM (Phase Modulation). Esta cambia la fase de la señal segun se este modulando un 0 o un 1.
+
+2) Modulacion en PM del binario '01110110'
+
+![alt text](image-1.png)
+
+3) Otras modulaciones basadas en los mismos principios: [eh?]
+
+4) Se llama BER (Bit Error Rate) a la proporcion de bits recibidos y demodulados en el receptor que no coinciden con bits enviados en el modulo transmisor.
+Falta que modulacion tiene mejor rendimiento en este aspecto.
+
 ---
 ## Actividad 4
+
+
 
 ---
