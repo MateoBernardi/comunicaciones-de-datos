@@ -18,12 +18,32 @@
 
 ## Actividad 1
 
+1) La imagen muestra una onda que tiene una frecuencia de 5 GHz y una longitud de onda de 60 mm. La longitud de onda se puede ver en el gráfico y la frecuencia se calcula de la siguiente manera: 
+f = (c/lamba) = 5GHz
+Siendo f la frecuencia, c la velocidad (que en este caso es igual a la velocidad de la luz), y lamba la longitud de onda.
 
+2) El ITU divide el planeta en 3 regiones para asignar el espectro. Dependiendo en qué región se encuentre físicamente, la asignación de frecuencia tiene ligeras modificaciones. 
+Según la ITU una frecuencia de 5 GHz cae en el rango de 3 GHz a 30 GHz, el cual está asignado a las microondas, mas específicamente en la banda baja de 5 GHz de WiFi.
+
+3) En esta frecuencia opera el WiFi moderno. Pero también hay sub-bandas en las cuales operan ciertos instrumentos de uso científico como puede ser un radar de corto alcance.
+
+4) La línea roja representa la envolvente de atenuación de la onda, es decir, como la amplitud de la onda disminuye a medida que se avanza en el espacio.
+
+5) Si, los radares también se ven afectados por este fenómeno. 
+Por otro lado, en la vida cotidiana se puede ver el ejemplo claro con el WiFi del hogar.
+
+6) La atenuación afecta a todas las transmisiones nombradas, puede que a alguna (cable coaxial) más que otra (fibra óptica), pero sí se ven afectadas todas.
 
 ---
 ## Actividad 2
 
+1) La imagen describe una transmisión digital síncrona unidireccional.
 
+2) Este paradigma de transmisión es mas veloz por ser síncrona, sin embargo, no se garantiza la bidireccionalidad en la imagen.
+
+3) ![alt text](senal_y.png)
+
+4) Las mediciones se realizan en el centro de cada intervalo de bit.
 
 ---
 ## Actividad 3
