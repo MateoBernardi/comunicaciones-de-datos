@@ -49,7 +49,7 @@ donde:
 
 2. Este paradigma de transmisión síncrona es más eficiente, ya que elimina la sobrecarga de bits de arranque o parada. Sin embargo, no se garantiza la bidireccionalidad en la imagen.
 
-3. ![alt text](senal_y.png)
+3. ![alt text](https://drive.google.com/file/d/10RJvDvBuaJuP48PhRlfA1yAUEl5rPH9A/view?usp=sharing)
 
 4. Las mediciones se realizan en el centro de cada intervalo de bit.
 
