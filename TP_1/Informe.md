@@ -19,8 +19,10 @@
 ## Actividad 1
 
 1) La imagen muestra una onda que tiene una frecuencia de 5 GHz y una longitud de onda de 60 mm. La longitud de onda se puede ver en el gráfico y la frecuencia se calcula de la siguiente manera: 
-f = (c/lamba) = 5GHz
-Siendo f la frecuencia, c la velocidad (que en este caso es igual a la velocidad de la luz), y lamba la longitud de onda.
+```
+            f = (c/lamba) = 5GHz
+```
+Siendo f la frecuencia, c la velocidad (que en este caso es igual a la velocidad de la luz), y lambda la longitud de onda.
 
 2) El ITU divide el planeta en 3 regiones para asignar el espectro. Dependiendo en qué región se encuentre físicamente, la asignación de frecuencia tiene ligeras modificaciones. 
 Según la ITU una frecuencia de 5 GHz cae en el rango de 3 GHz a 30 GHz, el cual está asignado a las microondas, mas específicamente en la banda baja de 5 GHz de WiFi.
@@ -50,24 +52,30 @@ Por otro lado, en la vida cotidiana se puede ver el ejemplo claro con el WiFi de
 
 ![alt text](image.png)
 
-1) La imagen muestra una modulacion PSK (Phase Shift Keying). Esta varia la fase de la señal entre dos valores discretos dependiendo del bit que se quiera modular.
+1) La imagen muestra una modulacion BPSK (Binary Phase Shift Keying). Esta varia la fase de la señal entre dos valores discretos dependiendo del bit que se quiera modular.
 
 2) Modulacion en PSK del binario '01110110'
 
 ![alt text](image-1.png)
 
-3) Los principios de la modulacion PSK son el cambio de fase entre valores discretos dependiendo del bit modulado, la portadora es un seno de frecuencia mucho mayor a la moduladora, la amplitud es constante ya que la informacion se encuentra en la fase de la señal ...
-
-Se pueden encontrar modulaciones con mismos principios como FSK y M-PSK.
+3) Se pueden encontrar modulaciones con mismos principios como FSK, M-PSK, ASK.
 
 4) Se llama BER (Bit Error Rate) a la proporcion de bits recibidos y demodulados en el receptor que no coinciden con bits enviados en el modulo transmisor.
-Falta que modulacion tiene mejor rendimiento en este aspecto.
+En cuanto a mejor BER,  la modulacion BPSK tiene una gran separacion entre simbolos, gran resistencia al ruido y solo transmite un bit por símbolo.
 
 ---
 ## Actividad 4
 
 ### Simulación en Cisco Packet Tracer
 
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
 
-
+agregar imagenes, ver como hacer ping entre pc
 ---
