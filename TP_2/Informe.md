@@ -100,7 +100,7 @@ _Diferencias entre cables_:
 **Derecho (Straight-Through)**: ambos extremos con el mismo orden de colores. Se usa PC ↔ Switch/Router.
 **Cruzado (Crossover)**: invierte TX y RX en un extremo. Se usa PC ↔ PC o Switch ↔ Switch directamente.
 
-![alt text](image.png)
+<img width="817" height="242" alt="image" src="https://github.com/user-attachments/assets/b925133d-66a2-4daa-b80f-adda463de2df" />
 
 c)
 
@@ -108,7 +108,7 @@ Para este apartado hemos utilizado la herramienta WireShark para testear y proba
 
 Para comenzar se utilizo el comando **ipconfig** para obtener la informacion de ip propia y puerta de enlace
 
-![alt text](image-1.png)
+<img width="631" height="253" alt="image" src="https://github.com/user-attachments/assets/b6a81d31-57c3-4c91-8275-524ee43bb191" />
 
 - **Direccion IPv4**: 192.168.100.4
 - **Puerta de enlace predeterminada**: 192.168.100.1
@@ -117,16 +117,18 @@ A continuación se envia un **ping** a la puera de enlace para rastrear y analiz
 Se utilizo una PC de Escritorio conectada al Router por medio de un cable Ethernet UTP.
 
  
-![alt text](image-2.png)
+<img width="697" height="336" alt="image" src="https://github.com/user-attachments/assets/dad0b385-b23b-43cb-aaab-e01048794d6f" />
 
-![alt text](image-3.png)
+<img width="858" height="187" alt="image" src="https://github.com/user-attachments/assets/71c06fe0-3cf2-4886-9cef-8d7be2aa5b0f" />
+
 
 En esta imagen se filtraron los paquetes **icmp** para obtener los enviados y recibidos a traves del ping.
 Se puede observar que la conexion se pudo testear correctamente.
 
 Si analizamos con mayor profundidad un paquete concreto, podemos obtener la siguiente informacion
 
-![alt text](image-4.png)
+<img width="850" height="384" alt="image" src="https://github.com/user-attachments/assets/3cfac1bc-0f48-4f7b-b3f1-ae0d72a95cca" />
+
 
 ###### Detalle de la trama
 - Ethernet II: dirección MAC de origen y destino. El programa nos brinda las empresas fabricantes de cada dispositivo:
@@ -144,14 +146,16 @@ Con la dirección de MAC obtenida con el ping anteriormente, podemos obtener inf
 Esto fue lo que pudimos obtener:
 
 Dirección MAC de destino. PC de escritorio.
-![alt text](image-5.png)
+<img width="852" height="429" alt="image" src="https://github.com/user-attachments/assets/528971af-73ed-4cfd-9d34-a67a45878ee0" />
+
 
 Fecha de creación: 30 de diciembre de 2018
 Fabricante: ASRock Incorporation.
 Direccion de la compañia: 2F., No. 37, Sec. 2, Jhongyang S. Rd., Beitou District, Taipei 112 TW.
 
 Dirección MAC de origen. Router Huawei.
-![alt text](image-9.png)
+<img width="847" height="410" alt="image" src="https://github.com/user-attachments/assets/38984f6c-43da-4bbd-8114-71ab2e160e0b" />
+
 
 Fecha de creación: 11 de febrero de 2020
 Fabricante: Huawei Tech Co.
@@ -162,13 +166,15 @@ e)
 Para este apartado hemos conectado otro dispositivo a la misma red, en este caso una Notebook a traves de WiFi.
 Como prueba enviamos un ping desde el nuevo dispositivo, con IPv4 local 192.168.100.36, a la PC de Escritorio con IPv4 192.168.100.4 .
 Luego procedemos de igual manera con WireShark para analizar los paquetes recibidos.
-![alt text](image-7.png)
+<img width="856" height="511" alt="image" src="https://github.com/user-attachments/assets/35606809-6d58-4b2d-83f8-17b9fcfee971" />
+
 En este caso el paquete llega a nuestro dispositivo conectado por cable, pero no puede enviar la respuesta.
 Tras intentos de realizar la conexion de forma inversa, no pudimos lograrlo.
 
 A pesar de esto, podemos analizar los paquetes recibidos en el primer dispositivo y extraer la siguiente información:
 
-![alt text](image-8.png)
+<img width="771" height="397" alt="image" src="https://github.com/user-attachments/assets/0703711d-9348-4b3d-990d-72b292a06f02" />
+
 ###### Detalle de la trama
 - Ethernet II: dirección MAC de origen y destino. El programa nos brinda las empresas fabricantes de cada dispositivo:
   - Origen: Intel
@@ -180,7 +186,7 @@ A pesar de esto, podemos analizar los paquetes recibidos en el primer dispositiv
 - HexDump: Se trata de toda la informacion detallada anteriormente pero en formato hexadecimal, tal y como viaja por el cable de red.
 
 Con la nueva direccion MAC podemos obtener informacion del fabricante del nuevo dispositivo conectado en la red.
-![alt text](image-6.png)
+<img width="853" height="421" alt="image" src="https://github.com/user-attachments/assets/91e83c02-6ce8-4b48-aea9-a0ada2cb5eac" />
 
 Fecha de creación: 07 de abril de 2024
 Fabricante: Intel Corp
