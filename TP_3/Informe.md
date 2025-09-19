@@ -30,13 +30,14 @@
 
 5- 
 |                    | Wi-Fi 5       | Wi-Fi 6        | Wi-Fi 7        |
-| ------------------ | ------------- | --------------------------------|
+| ------------------ | ------------- | ---------------|----------------|
 | **Versión IEEE**   | IEEE 802.11ac | IEEE 802.11ax  | IEEE 802.11be  | 
 | **Tasa datos max** | ~3.5 Gbps     | ~9.6 Gbps      | ~46 Gbps       | 
 | **Banda(s)**       | 5 GHz         | 2.4 GHz, 5 GHz | 2.4, 5, 6 GHz  | 
 | **Ancho de banda** | Hasta 160 MHz | Hasta 160 MHz  | Hasta 320 MHz  | 
 | **Modulación**     | 256 QAM       | Hasta 1024 QAM | Hasta 4096 QAM | 
 | **Sistema de seg** | WPA2          | WPA3           | WPA3           | 
+|--------------------|---------------|----------------|----------------|
 
 ## Actividad 2
 En esta actividad se responden preguntas sobre las transmisiones en Fibra Óptica.
@@ -111,5 +112,7 @@ La fibra óptica es generalmente más rápida y estable, pero las conexiones ina
     - En inalámbrico: las ondas deben propagarse sin demasiadas interferencias, reflexiones o pérdidas de señal.
 
 ## Actividad 3
+
+
 
 ## Actividad 4
