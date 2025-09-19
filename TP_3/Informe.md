@@ -142,3 +142,51 @@ c)
 |¿Disponible en PT?  |Si            |Si            |No             |No            |No           |
 
 ## Actividad 4
+
+a)
+
+Estas son las tecnologias que permiten que hoy en dia se puedan conectar a WiFi los pasajeros de un avion:
+1. **Air-to-Ground (A2G)**
+
+Esta tecnología utiliza torres de telefonía móvil terrestres con antenas orientadas hacia arriba y una antena en la parte inferior del avión para establecer una conexión directa con la red terrestre.
+
+##### Características:
+
+* Baja latencia: La comunicación directa con la red terrestre reduce la latencia, ofreciendo una experiencia más fluida para los usuarios.
+
+* Alta capacidad por área: A2G puede proporcionar una mayor capacidad de datos por kilómetro cuadrado en comparación con los sistemas satelitales, especialmente en áreas densamente pobladas. 
+Thales
+
+##### Limitaciones:
+
+* Cobertura limitada: Solo es efectiva en áreas con infraestructura de torres terrestres, lo que excluye océanos y regiones remotas. 
+AN Aviation Services Co.
+
+* Dependencia de la línea de vista: Obstáculos como montañas o edificios altos pueden interrumpir la señal.
+
+* Capacidad limitada en rutas internacionales: Su uso se restringe principalmente a vuelos nacionales o regionales.
+
+2. **Conectividad Satelital**
+
+Los aviones se conectan a satélites en órbita, que luego transmiten la señal a estaciones terrestres.
+
+##### Características:
+
+* Cobertura global: Ideal para vuelos transatlánticos o sobre océanos, donde no hay infraestructura terrestre disponible.
+
+* Alta capacidad de datos: Sistemas como ViaSat-3 ofrecen velocidades de hasta 1 Gbps, permitiendo streaming y videollamadas de alta calidad. 
+
+* Tecnología avanzada: La constelación Starlink de SpaceX, por ejemplo, utiliza satélites de órbita baja para ofrecer baja latencia y alta velocidad.
+
+##### Limitaciones:
+
+* Mayor latencia: La señal debe viajar al espacio y regresar, lo que introduce una mayor latencia en comparación con A2G.
+
+* Costo elevado: La instalación y mantenimiento de equipos satelitales en aviones es costosa.
+
+* Interferencia climática: Condiciones meteorológicas adversas pueden afectar la calidad de la señal.
+
+b)
+
+
+c)
