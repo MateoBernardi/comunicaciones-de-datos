@@ -112,7 +112,33 @@ La fibra óptica es generalmente más rápida y estable, pero las conexiones ina
     - En inalámbrico: las ondas deben propagarse sin demasiadas interferencias, reflexiones o pérdidas de señal.
 
 ## Actividad 3
+a)
+| Protocolo          | Estandarizado | Estándar (última versión)       |
+| ------------------ | ------------- | --------------------------------|
+| *Wi-FI*          | Sí            | IEEE 802.11(ax,be)              | 
+| *Bluetooth*      | Sí            | IEEE 802.1.15                   | 
+| *ZigBee*         | Sí            | IEEE 802.15.4                   | 
+| *NFC*            | Sí            | ISO/IEC 18092:2019              | 
+| *LTE*            | Sí            | 3GPP                            | 
+| *GSM*            | Sí            | EDGE                            | 
+| *5G (#GPP)*      | Sí            | 3GPP                            |
+| *LoRa*           | Parcialmente  | LoRaWAN 1.0.4 (sólo protocolo)  | 
+| *NB-IoT*         | Sí            | 3GPP                            | 
+| *SigFox*         | No            | x                               | 
+| *Z-Ware*         | Sí            | ITU-T G.9959                    |
 
+b)
 
+![alt text](graph_tp3.png)
+
+c)
+
+|Características     |UTP           |Fibra Óptica  |Wi-Fi 802.11be |Bluetooth 5.4 |5G           |
+|--------------------|--------------|--------------|---------------|--------------|-------------|
+|Ancho de Banda      |Hasta 10 Gbps |Hasta 400 Gbps|Hasta 46 Gbps  |Hasta 2 Mbps  |Hasta 20 Gbps|
+|Distancias          |Hasta 100m    |Hasta 200km (SMF)|Hasta 70m   |Hasta 240m    |Hasta 100km  |
+|Inmunidad a EMI/RFI |Baja          |Muy alta      |Moderada       |Moderada/ Baja|Moderada     |
+|Costos de medios    |Bajo          |Alto          |Moderado       |Muy bajo      |Alto         |
+|¿Disponible en PT?  |Si            |Si            |No             |No            |No           |
 
 ## Actividad 4
