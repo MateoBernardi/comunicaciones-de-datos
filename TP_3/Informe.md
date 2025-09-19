@@ -91,7 +91,11 @@ Por otro lado, la fibra multimodo usa el recubrimiento para enviar luz rebotando
 
 El problema con que la luz rebote muchas veces con el recubrimiento es que a mayor distancia recorrida, mayor es la **dispersion modal**.
 
-La dispersion modal e
+La dispersion modal es el fenomeno por el cual los diferentes pulsos que entran en la fibra multimodo recorren diferentes distancias debido a los diferentes angulos en los que rebotan con el recubrimiento.
+
+En largas distancias, esto puede generar perdida de información, ya que no se puede asegurar que los pulsos de luz lleguen en el orden en el que fueron enviados.
+
+c)
 
 ## Actividad 3
 
