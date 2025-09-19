@@ -96,6 +96,19 @@ La dispersion modal es el fenomeno por el cual los diferentes pulsos que entran 
 En largas distancias, esto puede generar perdida de información, ya que no se puede asegurar que los pulsos de luz lleguen en el orden en el que fueron enviados.
 
 c)
+##### Relación entre conexiones inalámbricas y por fibra optica
+
+- **Uso de la luz o señales electromagnéticas:** La fibra óptica transmite luz visible o infrarroja a través del núcleo de vidrio o plástico. Las conexiones inalámbricas transmiten ondas electromagnéticas por el aire.
+
+En ambos casos, la información viaja en forma de señales electromagnéticas moduladas para transportar datos.
+
+- **Velocidad de transmisión alta:** Ambas tecnologías permiten transferencias rápidas de datos.
+
+La fibra óptica es generalmente más rápida y estable, pero las conexiones inalámbricas también alcanzan velocidades considerables con las nuevas generaciones (5G, Wi-Fi 6/7).
+
+- **Dependencia de la propagación**:
+    - En fibra óptica: la luz debe permanecer confinada en el núcleo mediante reflexión interna total (Ley de Snell).
+    - En inalámbrico: las ondas deben propagarse sin demasiadas interferencias, reflexiones o pérdidas de señal.
 
 ## Actividad 3
 
