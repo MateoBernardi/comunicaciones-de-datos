@@ -205,5 +205,32 @@ Revision del Paper:
 ###### 13 de agosto de 2025
 https://arxiv.org/abs/2508.09839
 
+En este articulo de investigacion se proponen medir el desempeño real de Starlink en aviones en rutas intercontinentales, para obtener latencia, subida y bajada (throughput), entre otros.
+
+Las mediciones se realizaron en 2 vuelos:
+- Flight I: Honolulu -> Izumisano (sobre el Océano Pacífico) 
+- Flight II: Munich -> Helsinki (sobre el Mar Báltico/Europa)
+
+Para la medicion se utilizaron dispositivos de pasajeros conectados al router del avion vía Wi-Fi.
+Se midieron las siguientes variables, con sus respectivos resultados:
+||Resultados  |
+|-------|------------------|
+|Bajada | ~65 Mbps en vuelo |
+|Subida | ~24 Mbps en general |
+|RTT(latencia) |~62 ms |
+|Packet Delivery Ratio | >99.4%|
+
+**Observaciones interesantes**
+- Se noto que la altitud influye en la velocidad de subida. Mientras mas alto se encuentra el avion, mayor tasa de subida.
+Posiblemente este efecto se deba a la mayor interferencia cerca del suelo.
+- La latencia depende mucho de cuán lejos está el avión del ground station, y cuántos saltos de satélite (ISLs) están en la ruta.
+- Cuando aterrizaban, bajaba la cantidad de usuarios activos o se redistribuían los recursos, lo que podía mejorar un poco las tasas de bajada para quien estaba midiendo.
+
+**Limitaciones**
+Cabe destacar que se trata de un estudio limitado a dos vuelos,y hay datos que no se conocen como la carga de usuarios de la red del avion. 
+
 
 c)
+
+Pensamos que la forma en que se puede resolver esto es dividiendo los traficos. Que las tablets y dispositivos que utilizan el contenido a bordo se conecten a un servidor local con los contenidos permitidos o almacenados, mientras que los dispositivos que busquen conectarse y usar la red WiFi se conecten directamente con el router del avion para recibir la señal satelital o A2G.
+Por otra parte el servidor podria tambien estar conectado a la red mediante el router para asi poder recibir actualizaciones o bajar nuevo contenido. 
