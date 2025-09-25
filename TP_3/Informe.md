@@ -23,7 +23,85 @@
 1- Ethernet es una tecnología para redes de datos por cable surgida a principios de los años 70, como sistema interno de la empresa Xerox, y que luego se estandarizó en los años 80. **IEEE 802.3** es el protocolo actual más extendido para su uso, sustentando prácticamente todas las redes LAN modernas.
 **IEEE 802.11** introducido en 1997 por el IEEE, engloba varias normas WLAN (wireless) utilizadas en la mayoría de los dispositivos con capacidad de transmisión. Las mismas definen la capa física en una red inalámbrica local y permiten el acceso a dicha capa. Hoy en día es el estándar detrás del Wi-Fi.
 
-2-
+2- Para este punto nos conectamos a UNC-LIBRE desde una notebook con Windows OS y en la CMD ejecutamos el siguiente comando:
+
+
+```bash
+netsh wlan show networks mode=bssid
+
+``` 
+
+El resultado es informacion de todas las redes disponibles. Como nosotros nos conectamos a UNC-LIBRE, nos interesa la siguiente parte:
+
+```bash
+SSID 3 : unc-libre 
+Tipo de red : Infraestructura
+  Autenticación : Abierta 
+  Cifrado : Ninguna 
+  BSSID 1 : 62:22:32:10:88:3e 
+    Señal : 80% 
+    Tipo de radio : 802.11ax 
+    Banda : 5 GHz Canal : 64 
+    Carga Bss: 
+    Estaciones conectadas: 20 
+    Uso del canal: 145 (56 %) 
+    Capacidad disponible media: 31250 (1000000 us/s) 
+    mscs QoS   admitidos: 0 
+    Asignación de QoS admitida: 0 
+    Velocidades básicas (Mbps): 6 12 24 
+    Otras velocidades (Mbps): 9 18 36 48 54 
+  BSSID 2 : 1e:e8:29:6b:f5:fa Señal : 22% 
+    Tipo de radio : 802.11ac 
+    Banda : 5 GHz 
+    Canal : 48 
+    Carga Bss: 
+    Estaciones conectadas: 15 }
+    Uso del canal: 170 (66 %) 
+    Capacidad disponible media: 31250 (1000000 us/s) 
+    mscs QoS admitidos: 0 
+    Asignación de QoS admitida: 0 
+    Velocidades básicas (Mbps): 6 12 24 
+    Otras velocidades (Mbps): 9 18 36 48 54 
+  BSSID 3 : 62:22:32:10:97:ee 
+    Señal : 29% 
+    Tipo de radio : 802.11ax 
+    Banda : 5 GHz 
+    Canal : 52 
+    Carga Bss: 
+    Estaciones conectadas: 0 
+    Uso del canal: 16 (6 %) 
+    Capacidad disponible media: 31250 (1000000 us/s) 
+    mscs QoS admitidos: 0 
+    Asignación de QoS admitida: 0 
+    Velocidades básicas (Mbps): 6 12 24 
+    Otras velocidades (Mbps): 9 18 36 48 54 
+  BSSID 4 : 66:22:32:20:3f:cb 
+    Señal : 22% 
+    Tipo de radio : 802.11ax 
+    Banda : 5 GHz 
+    Canal : 100 
+    Carga Bss: Estaciones conectadas: 4 
+    Uso del canal: 20 (7 %) 
+    Capacidad disponible media: 31250 (1000000 us/s) 
+    mscs QoS admitidos: 0 
+    Asignación de QoS admitida: 0 
+    Velocidades básicas (Mbps): 6 12 24 
+    Otras velocidades (Mbps): 9 18 36 48 54
+``` 
+
+**Resultados obtenidos**
+
+En la salida se observan varios BSSID (puntos de acceso distintos, pero todos pertenecen a la red unc-libre). Para cada uno aparece el campo Tipo de radio:
+
+BSSID 1 → 802.11ax (Wi-Fi 6)
+
+BSSID 2 → 802.11ac (Wi-Fi 5)
+
+BSSID 3 → 802.11ax (Wi-Fi 6)
+
+BSSID 4 → 802.11ax (Wi-Fi 6)
+
+Esto nos indica que la red UNC-LIBRE utiliza mayoritariamente el estandar IEEE 802.11ax (Wi-Fi 6), aunque se detecta un punto de acceso con el estandar IEEE 802.11ac (Wi-Fi 5), posiblemente para darle compatibilidad a dispositivos mas antiguos.
 
 3- Si una red Wi-Fi opera con un protocolo específico, y un dispositivo utiliza una NIC que no soporta dicho protocolo, el dispositivo no podrá conectarse a la red Wi-Fi. La compatibilidad entre el protocolo de la red y las capacidades de la NIC del dispositivo es necesaria para establecer una conexión exitosa.
 
