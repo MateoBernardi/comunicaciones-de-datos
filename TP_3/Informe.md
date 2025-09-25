@@ -124,7 +124,7 @@ En esta actividad se responden preguntas sobre las transmisiones en Fibra Óptic
 a)
 En la siguiente imagen se pueden observar dos diferentes tipos de transmision por fibra óptica.
 
-![alt text](image.png)
+<img width="762" height="161" alt="image" src="https://github.com/user-attachments/assets/98f635f8-11b8-412a-8183-066d231284fc" />
 
 En la primera ilustracion vemos un segmento de fibra usada en **monomodo**, mientras que la segunda la muestra en su aplicacion de **multimodo**.
 Estas son dos formas de transmision via Fibra Optica y tienen diferentes características.
@@ -164,7 +164,8 @@ donde:
 Cuando hablamos de Fibra Óptica, esta ley nos explica la diferencia central entre fibra Monomodo y Multimodo.
 
 El cableado de Fibra Óptica esta compuesto por 3 partes fundamentales:
-![alt text](image-1.png)
+<img width="593" height="294" alt="image" src="https://github.com/user-attachments/assets/6dc756a3-4a79-4724-b194-84728dc1eb9b" />
+
 
 - Núcleo: Se trata de vidrio con un indice de refraccion \( n_1 \)
 - Recubrimiento: Se trata de vidrio con un indice de refraccion de \( n_2 \).
@@ -215,7 +216,8 @@ a)
 
 b)
 
-![alt text](graph_tp3.png)
+<img width="1197" height="798" alt="image" src="https://github.com/user-attachments/assets/eda55d6f-93a8-418c-a86c-c3822c284b1d" />
+
 
 c)
 
