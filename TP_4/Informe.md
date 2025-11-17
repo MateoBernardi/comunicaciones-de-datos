@@ -44,3 +44,105 @@ Este estándar define el protocolo de etiquetado de tramas en redes Ethernet, lo
 Permite a los switches distinguir a qué VLAN pertenece cada trama cuando viajan por un mismo enlace físico.
 
 ## Actividad 2
+
+En esta actividad se implementa la siguiente topología en Packet Tracer
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+a) Nombrar los switch como sw1 y sw2.
+- Se puso como contraseña de la consola: `contrasena_consola`.
+- Se puso como contraseña de exec: `contrasena_exec`.
+- Se utilizo `service password-encryption` para encriptar las contraseñas.
+
+d) Se configuraron las VLAN segun la tabla de direcciones
+
+![alt text](image-3.png)
+
+e) Se desconectaron todas las interfaces que no estaban siendo utilizadas.
+
+![alt text](image-5.png)
+
+g) En este punto se testeó la comunicación haciendo ping entre computadoras.
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+h) Se crearon VLAN en ambos switches.
+
+![alt text](image-8.png)
+![alt text](image-9.png)
+
+i) Visualizamos la lista de VLANs.
+
+![alt text](image-10.png)
+Por defecto se utiliza la VLAN `vlan 1`.
+
+l) Verificar estado de la VLAN.
+
+![alt text](image-11.png)
+
+- VLAN 10 Lab: Tiene asignado el puerto Fa0/6
+
+![alt text](image-12.png)
+
+n) Verificar conexion entre PC-A y PC-B usando pings.
+
+![alt text](image-13.png) ![alt text](image-14.png)
+
+Conectividad entre pcs:
+Las dos PCs pertenecen a la VLAN Laboratorio configurada en los switches.
+Las PCs en la VLAN 10 se comunican correctamente entre sí a través de los dos switches. Se  confirma el correcto funcionamiento de la segmentación por VLAN y la conectividad de capa 2.
+
+## Actividad 3
+
+Utilizando lo que aprendimos sobre VLAN, e investigando la configuración de NAT y ACLs,
+simularemos el despliegue de una red LAN a bordo de una aeronave. La idea es la siguiente, tendremos
+tres segmentos:
+i) Clase Turista: acceso solo a un sistema de entretenimiento (server local)
+ii) Clase Business: acceso a sistema de entretenimiento e internet.
+iii) Administración: acceso total.
+
+![alt text](image-15.png)
+
+Topología:
+![alt text](image-16.png)
+
+Y la siguiente tabla de direccionamiento:
+
+![alt text](image-17.png)
+
+--- 
+![alt text](image-19.png)
+
+Pruebas
+
+![alt text](image-20.png)
+
+Ping al servidor de entretenimiento - De PC turista a 10.10.99.254
+
+![alt text](image-21.png)
+
+Acceso HTTP al servidor local 
+
+![alt text](image-22.png)
+
+Ping a internet desde PC Turista
+
+![alt text](image-23.png)
+
+Acceso HTTP al servidor local - desde PC business
+
+![alt text](image-24.png)
+
+Ping a internet desde PC Business
+
+![alt text](image-25.png)
+
+Ping entre admin y todos
+
+![alt text](image-26.png)
+![alt text](image-27.png)
