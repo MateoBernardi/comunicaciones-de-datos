@@ -46,11 +46,11 @@ Permite a los switches distinguir a qué VLAN pertenece cada trama cuando viajan
 ## Actividad 2
 
 En esta actividad se implementa la siguiente topología en Packet Tracer
-![alt text](image.png)
+<img width="1128" height="297" alt="image" src="https://github.com/user-attachments/assets/bd7c2241-cb9f-4c09-be8d-b35a332128ac" />
 
-![alt text](image-1.png)
+<img width="1601" height="413" alt="image" src="https://github.com/user-attachments/assets/f61d3df6-7be3-4ecf-928f-3d41be8d714e" />
 
-![alt text](image-2.png)
+<img width="1327" height="545" alt="image" src="https://github.com/user-attachments/assets/7b3e3975-785b-484d-8012-f7955574a9d3" />
 
 a) Nombrar los switch como sw1 y sw2.
 - Se puso como contraseña de la consola: `contrasena_consola`.
@@ -59,39 +59,40 @@ a) Nombrar los switch como sw1 y sw2.
 
 d) Se configuraron las VLAN segun la tabla de direcciones
 
-![alt text](image-3.png)
+<img width="1063" height="320" alt="image" src="https://github.com/user-attachments/assets/03885a7d-0169-4b7f-aa56-325c443c107a" />
 
 e) Se desconectaron todas las interfaces que no estaban siendo utilizadas.
 
-![alt text](image-5.png)
+<img width="672" height="589" alt="image" src="https://github.com/user-attachments/assets/c984940c-9218-45a4-b154-957ab8ac0503" />
 
 g) En este punto se testeó la comunicación haciendo ping entre computadoras.
 
-![alt text](image-6.png)
+<img width="526" height="702" alt="image" src="https://github.com/user-attachments/assets/af420879-ea55-4085-98fd-d480c245544a" />
 
-![alt text](image-7.png)
+<img width="548" height="698" alt="image" src="https://github.com/user-attachments/assets/76bc5a72-b7a1-4367-9bed-7dd77984d3db" />
 
 h) Se crearon VLAN en ambos switches.
 
-![alt text](image-8.png)
-![alt text](image-9.png)
+<img width="472" height="182" alt="image" src="https://github.com/user-attachments/assets/3de26951-1979-4fc9-a856-d1ab5fd1e652" />
+<img width="549" height="138" alt="image" src="https://github.com/user-attachments/assets/9d0b69dd-a9e6-4175-acb7-bf63a79bcd44" />
 
 i) Visualizamos la lista de VLANs.
 
-![alt text](image-10.png)
+<img width="394" height="307" alt="image" src="https://github.com/user-attachments/assets/aa4017e1-47ac-4445-89cf-c1ef95820083" />
 Por defecto se utiliza la VLAN `vlan 1`.
 
-l) Verificar estado de la VLAN.
+l) Se cambio el puerto a la VLAN Laboratorio. Verificar estado de la VLAN.
 
-![alt text](image-11.png)
+<img width="547" height="462" alt="image" src="https://github.com/user-attachments/assets/613309f9-07bc-44b6-a616-aa26b9ce3552" />
 
 - VLAN 10 Lab: Tiene asignado el puerto Fa0/6
 
-![alt text](image-12.png)
+<img width="672" height="587" alt="image" src="https://github.com/user-attachments/assets/0475d7c9-1086-46a0-a073-74b541dbcb96" />
 
 n) Verificar conexion entre PC-A y PC-B usando pings.
 
-![alt text](image-13.png) ![alt text](image-14.png)
+<img width="704" height="462" alt="image" src="https://github.com/user-attachments/assets/5e94da2b-cf02-4db3-b380-e144dc7da9e4" />
+<img width="746" height="455" alt="image" src="https://github.com/user-attachments/assets/a255ad2f-6087-4ff0-b08d-ea28d109d7e6" />
 
 Conectividad entre pcs:
 Las dos PCs pertenecen a la VLAN Laboratorio configurada en los switches.
@@ -106,43 +107,43 @@ i) Clase Turista: acceso solo a un sistema de entretenimiento (server local)
 ii) Clase Business: acceso a sistema de entretenimiento e internet.
 iii) Administración: acceso total.
 
-![alt text](image-15.png)
+<img width="1343" height="460" alt="image" src="https://github.com/user-attachments/assets/4a1c77fd-9839-4030-9bfd-8d2c3b559d95" />
 
 Topología:
-![alt text](image-16.png)
+<img width="683" height="590" alt="image" src="https://github.com/user-attachments/assets/56dc63b2-237e-4e2f-acbf-776ba0361f03" />
 
 Y la siguiente tabla de direccionamiento:
 
-![alt text](image-17.png)
+<img width="863" height="220" alt="image" src="https://github.com/user-attachments/assets/53f6cf25-936d-434e-88f7-447639f6c323" />
 
 --- 
-![alt text](image-19.png)
+<img width="879" height="756" alt="image" src="https://github.com/user-attachments/assets/af805c45-45c3-47e1-a559-a43c4aca1bc2" />
 
 Pruebas
 
-![alt text](image-20.png)
+<img width="863" height="434" alt="image" src="https://github.com/user-attachments/assets/12976a83-8ef0-405a-8189-5ea9d34d7413" />
 
 Ping al servidor de entretenimiento - De PC turista a 10.10.99.254
 
-![alt text](image-21.png)
+<img width="580" height="388" alt="image" src="https://github.com/user-attachments/assets/22299c6b-f829-4799-b21c-be0a27fefd39" />
 
 Acceso HTTP al servidor local 
 
-![alt text](image-22.png)
+<img width="835" height="845" alt="image" src="https://github.com/user-attachments/assets/ce3ffeae-7aeb-4e9d-9c8b-ee473c0cb998" />
 
 Ping a internet desde PC Turista
 
-![alt text](image-23.png)
+<img width="573" height="316" alt="image" src="https://github.com/user-attachments/assets/ac62714b-81b3-4988-8830-5f7e1e3fd65a" />
 
 Acceso HTTP al servidor local - desde PC business
 
-![alt text](image-24.png)
+<img width="825" height="845" alt="image" src="https://github.com/user-attachments/assets/dc03eb38-bf42-4840-ba1c-83d3bc5b6d4a" />
 
 Ping a internet desde PC Business
 
-![alt text](image-25.png)
+<img width="690" height="459" alt="image" src="https://github.com/user-attachments/assets/5f45257d-5f97-46e2-9646-ca354dbad31e" />
 
 Ping entre admin y todos
 
-![alt text](image-26.png)
-![alt text](image-27.png)
+<img width="869" height="710" alt="image" src="https://github.com/user-attachments/assets/26efe869-c887-4a4c-bda5-d34923ffd5ba" />
+<img width="636" height="411" alt="image" src="https://github.com/user-attachments/assets/1fcf0430-47d1-4f18-82ea-b8b00f8a1c27" />
