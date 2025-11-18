@@ -15,14 +15,14 @@ PASSWORD = PASSWORD_HIVE
 
 
 def on_connect(client, userdata, flags, rc):
-    print("[SUB1] Conectado con código:", rc)
-    client.subscribe("lan/broadcast/all")
-    print("[SUB1] Suscrito a lan/broadcast/all")
+    print("[SUB2] Conectado con código:", rc)
+    client.subscribe("lan/broadcast/#")
+    print("[SUB2] Suscrito a lan/broadcast/#")
 
 def on_message(client, userdata, msg):
-    print(f"[SUB1] Mensaje recibido: {msg.topic} -> {msg.payload.decode()}")
+    print(f"[SUB2] Mensaje recibido: {msg.topic} -> {msg.payload.decode()}")
 
-client = mqtt.Client(client_id="sub_1")
+client = mqtt.Client(client_id="sub_2")
 client.username_pw_set(USERNAME, PASSWORD)
 
 client.on_connect = on_connect

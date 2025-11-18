@@ -14,8 +14,8 @@ PASSWORD = PASSWORD_HIVE
 
 def on_connect(client, userdata, flags, rc):
     print("[SUB1] Conectado con código:", rc)
-    client.subscribe("lan/broadcast/all")
-    print("[SUB1] Suscrito a lan/broadcast/all")
+    client.subscribe("lan/broadcast/#")
+    print("[SUB1] Suscrito a lan/broadcast/#")
 
 def on_message(client, userdata, msg):
     print(f"[SUB1] Mensaje recibido: {msg.topic} -> {msg.payload.decode()}")

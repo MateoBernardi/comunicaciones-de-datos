@@ -19,7 +19,7 @@ client.tls_set()  # HiveMQ Cloud exige TLS
 
 client.connect(HOST, 8883)
 
-topic = "lan/broadcast/#"
+topic = "lan/broadcast/all"
 msg = "Mensaje de broadcast desde el cliente central"
 
 print("[PUB] Publicando...")
