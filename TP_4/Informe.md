@@ -6,7 +6,7 @@
 
 ---
 
-# Informe TP1 - Comunicaciones de Datos
+# Informe - Comunicaciones de Datos
 
 **Materia:** Comunicaciones de Datos  
 **Trabajo Práctico N°:** 4
