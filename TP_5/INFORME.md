@@ -59,29 +59,141 @@ Para implementar el broker MQTT, se utilizó el servicio HiveMQ Cloud. El proces
 
 Este proceso permitió desplegar un entorno MQTT funcional y seguro, facilitando la comunicación entre dispositivos mediante el patrón publish/subscribe. 
 ![alt text](images/image.png)
+Conexión via web client:
 ![alt text](image-2.png)
-![alt text](image.png)
+
+## Actividad 3 y 4
+### Conexión entre diferentes clientes
+
+Se intento una conexion desde diferentes clientes
+
+Cliente que envia el mensaje:
 ![alt text](image-1.png)
+
+Cliente subscriptor del mensaje:
 ![alt text](image-3.png)
+
 ![alt text](image-4.png)
+
+En otra prueba, se quieso establecer conexión broadcast donde el cliente web envia un mensaje a todos los clientes suscritos a `lan/broadcast/#`:
 ![alt text](image-5.png)
 ![alt text](image-6.png)
 ![alt text](image-7.png)
+
+Tambien se probo un script en python estableciendo un cliente para recibir los mensajes del broadcast.
+
 ![alt text](image-8.png)
 
+## Actividad 5
+### Simulacion de una red usando MQTT
 
+En primera instancia se generaron 3 clientes que envian informacion de sensores de diferentes ambientes
 ![alt text](image-9.png)
 ![alt text](image-10.png)
 ![alt text](image-11.png)
+
+Luego un gateway que recibe todos los mensajes de la sala, y tambien los comandos desde el controlador, que le avisa a los sensores cuando enviar o dejar de enviar datos (comandos start y stop)
 ![alt text](image-12.png)
+
+Desde el cliente web se puede ver los mensajes recibidos suscribiendose a `lan/#`
+
 ![alt text](image-13.png)
+
+En esta terminal se puede ver la simulacion antes de enviar el comando `start`, y luego en ejecucion cuando se envia el comando `stop`.
 
 ![alt text](image-14.png)
 ![alt text](image-15.png)
 ![alt text](image-16.png)
+
+Por ultimo usando `matplotlib` pudimos graficar los datos de temperatura recibidos en el gateway, registrados en un .csv
 ![alt text](image-17.png)
 ![alt text](image-18.png)
 ![alt text](image-19.png)
+
+Para ver el trafico de datos, utilizamos WireShark para interceptar paquetes y revisar su contenido.
 ![alt text](image-20.png)
 ![alt text](image-21.png)
 ![alt text](image-22.png)
+
+#### Teórico actividad 5:
+
+a) ¿Sobre qué protocolos de capa de transporte están trabajando?
+
+Principalmente:
+TCP (el más común en MQTT).
+Proporciona conexión confiable, ordenada y sin pérdidas.
+UDP no se usa en MQTT estándar, pero sí en variantes como MQTT-SN.
+En tu práctica, solo trabajaron sobre TCP (lo podés verificar en Wireshark: MQTT / TCP / IP).
+
+b) Integridad, Confidencialidad y Disponibilidad en esta arquitectura
+
+Integridad:
+MQTT no tiene integridad propia salvo controles mínimos.
+Se apoya totalmente en TCP, que garantiza orden y detección de pérdidas.
+Si no se usa TLS, un atacante puede modificar paquetes.
+Integridad razonable si se usa TCP, débil sin mecanismo criptográfico.
+
+Confidencialidad:
+No existe por defecto.
+Todo viaja en texto claro si no se usa TLS.
+Cualquiera en la LAN puede leer mensajes con Wireshark.
+Confidencialidad solo está garantizada si se usa MQTT sobre TLS (MQTTS).
+
+Disponibilidad:
+Depende críticamente del broker. Si cae, la red se detiene.
+MQTT está diseñado para IoT de bajo consumo, pero no es tolerante a fallas severas.
+Buena disponibilidad si el broker está bien configurado, pero un único punto de falla.
+
+c) Rol de los niveles de QoS en la fiabilidad
+
+El QoS determina cuánta garantía de entrega tiene un mensaje:
+QoS 0: Puede perderse → fiabilidad mínima.
+QoS 1: Se entrega al menos una vez → buena fiabilidad pero puede haber duplicados.
+QoS 2: Se entrega exactamente una vez → máxima fiabilidad, más lento.
+
+QoS te permite equilibrar consumo / velocidad / fiabilidad según el tipo de dato.
+En sensores de tu TP, QoS 0 o 1 es típico.
+
+d) Ventajas del modelo pub/sub vs cliente-servidor
+
+Pub/Sub (MQTT):
+Los emisores (publishers) y los receptores (subscribers) nunca se conocen entre sí.
+El broker desacopla completamente.
+
+Permite:
+Escalabilidad masiva.
+Sensores livianos.
+Múltiples consumidores para un mismo dato.
+Menor tráfico (solo se envía lo que alguien pidió).
+
+Cliente-servidor:
+El cliente debe conectarse directamente al servidor.
+No escala bien si hay muchos clientes.
+Pub/Sub es ideal para IoT y redes con muchos sensores porque desacopla, escala mejor y reduce carga.
+
+e) Limitaciones de MQTT en una red LAN real
+
+Fiabilidad limitada si no se usa QoS 1 o 2.
+Sin seguridad por defecto (ni autenticación fuerte, ni cifrado).
+Depende de un broker: si se cae, muere la comunicación.
+No maneja grandes volúmenes de datos (pensado para mensajes cortos).
+Latencia mayor vs un protocolo directo sobre UDP.
+No está pensado para throughput alto, sino para mensajes pequeños.
+En una LAN de alto rendimiento, MQTT queda corto comparado con protocolos como ZeroMQ, gRPC o WebSockets puros.
+
+f) Implicaciones de depender de un broker central
+
+Desventaja principal: es un single point of failure.
+
+- Si el broker falla, se congestiona, pierde conexión.
+
+- También implica mayor latencia (todo pasa por el broker).
+
+- Dependencia de la configuración del broker para seguridad y autenticación.
+
+- Riesgo de cuello de botella si hay muchos sensores.
+
+Ventaja:
+Centraliza control, logging, autenticación, retención de mensajes, ACLs y administración.
+
+Para una chica es excelente, pero en sistemas críticos se recomienda HA (alta disponibilidad) o brokers redundantes.
